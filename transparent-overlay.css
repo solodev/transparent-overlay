@@ -1,0 +1,39 @@
+
+.full {
+    background: url(https://www.americandairy.com//_resources/images/content/farmer1.jpg) 0 0 no-repeat;
+    min-height: 634px;
+  }
+  .half {
+    background: url(https://www.americandairy.com//_resources/images/content/cow1.jpg) 0 0 no-repeat;
+    min-height: 301px;
+    margin-bottom: 30px;
+  }
+  .half2 {
+    background: url(https://www.americandairy.com//_resources/images/content/cow3.jpg) 0 0 no-repeat;
+    min-height: 301px;
+  }
+  .full, .half, .half2 {
+    background-size: cover;
+    position: relative;
+  }   
+  
+  .full:hover .overlay-effect, .half:hover .overlay-effect, .half2:hover .overlay-effect {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .overlay-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(41, 141, 204, 0.7);
+    overflow:hidden;
+  }   
+  
+  @media screen and (max-width: 768px) {
+    .full, .half, .half2 {margin-bottom: 10px;}
+  }
